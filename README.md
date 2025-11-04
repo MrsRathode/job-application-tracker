@@ -87,7 +87,7 @@ Option B: Use **Live Server** in VS Code for auto-refresh and a better experienc
 
 ## 🌐 Live Demo
 
-👉 Try it live here: https://your-live-demo-link.com
+👉 Try it live here: https://mrsrathode.github.io/job-application-tracker/
 
 ---
 
