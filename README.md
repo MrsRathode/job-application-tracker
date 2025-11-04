@@ -75,12 +75,13 @@ Option B: Use **Live Server** in VS Code for auto-refresh and a better experienc
 
 ## 🖼️ Screenshots
 
-| Dashboard View (Main) | Add Application Form (Part 1) |
-| --------------------- | ----------------------------- |
+| Dashboard View (Main) |
+| --------------------- |
 
 | ![Dashboard Screenshot](1.png)
 
-_Add Application Form (Part 2)_
+| Add Application Form (Part 1) |
+| ----------------------------- |
 
 ![Form Screenshot 2](2.png) | ![Form Screenshot 1](3.png) |
 
