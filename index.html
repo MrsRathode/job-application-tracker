@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Job Application Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <header>📋 Job Application Tracker</header>
+
+  <div class="container">
+    <!-- Add Form -->
+    <form id="applicationForm" class="card">
+      <input type="text" id="company" placeholder="Company Name" required />
+      <input type="text" id="position" placeholder="Position" required />
+      <input type="date" id="date" required />
+      <select id="status" required>
+        <option value="Applied">Applied</option>
+        <option value="Interview">Interview</option>
+        <option value="Selected">Selected</option>
+        <option value="Rejected">Rejected</option>
+      </select>
+      <button type="submit" id="submitBtn">Add Application</button>
+    </form>
+
+    <!-- Summary Stats -->
+    <div class="summary">
+      <span>Total: <b id="totalCount">0</b></span>
+      <span>Applied: <b id="appliedCount">0</b></span>
+      <span>Interview: <b id="interviewCount">0</b></span>
+      <span>Selected: <b id="selectedCount">0</b></span>
+      <span>Rejected: <b id="rejectedCount">0</b></span>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search by company or position" />
+      <select id="sort">
+        <option value="date">Sort by Date</option>
+        <option value="company">Sort by Company</option>
+      </select>
+      <button id="exportCsvBtn">Export CSV</button>
+      <button id="clearAllBtn">Clear All</button>
+    </div>
+
+    <!-- Table -->
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Position</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="applicationList"></tbody>
+      </table>
+    </div>
+
+    <!-- Status Summary -->
+    <div class="status-summary">
+      <span class="badge applied">Applied: <span id="badgeApplied">0</span></span>
+      <span class="badge interview">Interview: <span id="badgeInterview">0</span></span>
+      <span class="badge selected">Selected: <span id="badgeSelected">0</span></span>
+      <span class="badge rejected">Rejected: <span id="badgeRejected">0</span></span>
+    </div>
+
+    <!-- Chart -->
+    <canvas id="statusChart" width="400" height="200"></canvas>
+
+  </div>
+
+  <footer>
+    <p>Built by Anusha | HTML • CSS • JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
