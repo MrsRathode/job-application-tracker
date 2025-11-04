@@ -45,7 +45,7 @@ job-application-tracker/
 ## 🚀 How to Run Locally
 
 1️⃣ Clone the Repository  
-git clone https://github.com/your-username/job-application-tracker.git  
+git clone https://github.com/MrsRathode/job-application-tracker.git  
 cd job-application-tracker
 
 2️⃣ Run the App  
